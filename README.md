@@ -34,7 +34,7 @@ The application is built using **Streamlit** for interactive visualization and *
 
 ---
 
-### 🔮 Next Event Prediction
+### Next Event Prediction
 
 - Interactive selection of user activity sequences
 - Prediction of the **most likely next event** based on historical patterns
