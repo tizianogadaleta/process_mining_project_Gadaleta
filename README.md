@@ -65,7 +65,7 @@ Three AI-driven reports are generated:
   - Average session duration
   - Top process variants
  
-### 3. AI Chatbot
+#### 3. AI Chatbot
 - Analyze the provided process mining quality metrics
 - Identifies bottlenecks, UX issues, and optimization opportunities
 - Outputs structured recommendations with confidence levels
