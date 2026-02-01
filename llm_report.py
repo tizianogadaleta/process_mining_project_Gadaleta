@@ -108,7 +108,7 @@ def process_report():
             print("[INFO] Process variants extracted.")
 
         # -----------------------------
-        # 5. ADDITIONAL METRICS
+        # 4. ADDITIONAL METRICS
         # -----------------------------
         total_cases = df["case:concept:name"].nunique() if "case:concept:name" in df.columns else 0
 
@@ -140,7 +140,7 @@ def process_report():
         num_variants = len(variants)
 
         # -----------------------------
-        # 6. BUILD VARIANTS SUMMARY
+        # 5. BUILD VARIANTS SUMMARY
         # -----------------------------
         top_variants_text = []
         for i, (variant, cases) in enumerate(sorted_variants[:5] if variants else []):
@@ -151,7 +151,7 @@ def process_report():
         variants_summary = "\n".join(top_variants_text) if top_variants_text else "No variants available."
 
         # -----------------------------
-        # 7. PROMPT ENGINEERING
+        # 6. PROMPT ENGINEERING
         # -----------------------------
         prompt = f"""
             DATA SUMMARY:
@@ -207,3 +207,4 @@ def process_report():
         print(f"[ERROR] Error during processing: {e}")
 
     return ai_report
+
